@@ -1,14 +1,13 @@
 from exchange.pexchange import ccxt, ccxt_async, httpx
 from devtools import debug
 from exchange.model import MarketOrder
-from exchange.utility import log_message
-from exchange import  log_message
+# from exchange.utility import log_message
+# from exchange import  log_message
 import exchange.error as error
 
 
 class Binance:
     def __init__(self, key, secret):
-        log_message("바이낸스 객체 생성전")
         self.client = ccxt.binance(
             {
                 "apiKey": key,
@@ -16,7 +15,6 @@ class Binance:
                 "options": {"adjustForTimeDifference": True},
             }
         )
-        log_message("바이낸스 객체 생성 성공")
         self.client.load_markets()
         self.position_mode = "one-way"
         self.order_info: MarketOrder = None

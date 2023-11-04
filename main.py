@@ -129,6 +129,7 @@ async def order(order_info: MarketOrder, background_tasks: BackgroundTasks):
     try:
         exchange_name = order_info.exchange
         bot = get_bot(exchange_name, order_info.kis_number)
+        log_message("바이낸스 객체 생성")
         log_message(order_info)
         bot.init_info(order_info)
         log_message(bot.order_info)
