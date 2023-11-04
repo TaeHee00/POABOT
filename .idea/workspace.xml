@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="409387ad-dbd5-4a83-bfeb-5343c150cee7" name="변경" comment="" />
+    <list default="true" id="409387ad-dbd5-4a83-bfeb-5343c150cee7" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exchange/binance.py" beforeDir="false" afterPath="$PROJECT_DIR$/exchange/binance.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +71,7 @@
       <workItem from="1698895688172" duration="1116000" />
       <workItem from="1698898590781" duration="13060000" />
       <workItem from="1699007587007" duration="12000" />
-      <workItem from="1699007905640" duration="271000" />
+      <workItem from="1699007905640" duration="681000" />
     </task>
     <servers />
   </component>
