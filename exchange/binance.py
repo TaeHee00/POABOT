@@ -4,7 +4,18 @@ from exchange.model import MarketOrder
 # from exchange.utility import log_message
 # from exchange import  log_message
 import exchange.error as error
-
+from exchange.utility import (
+    settings,
+    log_order_message,
+    log_alert_message,
+    print_alert_message,
+    logger_test,
+    log_order_error_message,
+    log_validation_error_message,
+    log_hedge_message,
+    log_error_message,
+    log_message,
+)
 
 class Binance:
     def __init__(self, key, secret):
