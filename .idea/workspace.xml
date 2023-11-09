@@ -5,9 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="409387ad-dbd5-4a83-bfeb-5343c150cee7" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exchange/binance.py" beforeDir="false" afterPath="$PROJECT_DIR$/exchange/binance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exchange/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exchange/binance.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exchange/bitget.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exchange/bybit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exchange/database.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exchange/error.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exchange/model/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exchange/model/schemas.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exchange/okx.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exchange/pexchange.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exchange/pocket.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exchange/stock/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exchange/stock/error.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exchange/stock/kis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exchange/stock/schemas.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exchange/upbit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exchange/utility/LogMaker.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exchange/utility/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exchange/utility/setting.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exchange/utility/ws.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pb_data/data.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/windows/Caddyfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/windows/activate.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/windows/caddyrun.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/windows/install.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/windows/pip_install.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/windows/start.bat" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,12 +103,27 @@
       <workItem from="1698895688172" duration="1116000" />
       <workItem from="1698898590781" duration="13060000" />
       <workItem from="1699007587007" duration="12000" />
-      <workItem from="1699007905640" duration="919000" />
+      <workItem from="1699007905640" duration="1081000" />
+      <workItem from="1699085036092" duration="2692000" />
+      <workItem from="1699340376935" duration="388000" />
+      <workItem from="1699537511704" duration="1699000" />
+      <workItem from="1699552190847" duration="304000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

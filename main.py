@@ -26,8 +26,9 @@ import ipaddress
 import os
 import sys
 from devtools import debug
+import datetime
 
-VERSION = "0.1.3"
+VERSION = "0.1.1"
 app = FastAPI(default_response_class=ORJSONResponse)
 
 
@@ -126,16 +127,18 @@ def log_error(error_message, order_info):
 @app.post("/")
 async def order(order_info: MarketOrder, background_tasks: BackgroundTasks):
     order_result = None
-    now = datetime.now()
+    now = datetime.datetime.now()
+    log_message(f'/order 요청 받은 시점 {now}')
     try:
-        log_message("/order 요청 받은 시각\n" + now.strftime('%Y-%m-%d %H:%M:%S') + ":" + now.microsecond)
         exchange_name = order_info.exchange
         bot = get_bot(exchange_name, order_info.kis_number)
         bot.init_info(order_info)
 
         if bot.order_info.is_crypto:
             if bot.order_info.is_entry:
+                log_message(f'ccxt 거래 요청 시점 {now}')
                 order_result = bot.market_entry(bot.order_info)
+                log_message(f'ccxt 거래 마감 시점 {now}')
             elif bot.order_info.is_close:
                 order_result = bot.market_close(bot.order_info)
             elif bot.order_info.is_buy:

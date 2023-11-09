@@ -1,21 +1,8 @@
 from exchange.pexchange import ccxt, ccxt_async, httpx
 from devtools import debug
 from exchange.model import MarketOrder
-# from exchange.utility import log_message
-# from exchange import  log_message
 import exchange.error as error
-from exchange.utility import (
-    settings,
-    log_order_message,
-    log_alert_message,
-    print_alert_message,
-    logger_test,
-    log_order_error_message,
-    log_validation_error_message,
-    log_hedge_message,
-    log_error_message,
-    log_message,
-)
+
 
 class Binance:
     def __init__(self, key, secret):
@@ -247,7 +234,6 @@ class Binance:
             self.set_leverage(order_info.leverage, symbol)
 
         try:
-            # log_message("ccxt 주문 요청 전시각\n" + now.strftime('%Y-%m-%d %H:%M:%S') + ":" + now.microsecond)
             result = retry(
                 self.client.create_order,
                 symbol,
@@ -261,7 +247,6 @@ class Binance:
                 delay=0.1,
                 instance=self,
             )
-            # log_message("ccxt 주문 마무리 시각\n" + now.strftime('%Y-%m-%d %H:%M:%S') + ":" + now.microsecond)
             return result
         except Exception as e:
             raise error.OrderError(e, self.order_info)
