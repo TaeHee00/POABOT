@@ -126,21 +126,18 @@ def log_error(error_message, order_info):
 @app.post("/")
 async def order(order_info: MarketOrder, background_tasks: BackgroundTasks):
     order_result = None
+    now = datetime.now()
     try:
+        log_message("/order 요청 받은 시각\n" + now.strftime('%Y-%m-%d %H:%M:%S') + ":" + now.microsecond)
         exchange_name = order_info.exchange
         bot = get_bot(exchange_name, order_info.kis_number)
-        log_message("바이낸스 객체 생성")
-        log_message(order_info)
         bot.init_info(order_info)
-        log_message(bot.order_info)
 
         if bot.order_info.is_crypto:
             if bot.order_info.is_entry:
-                log_message("장 진입")
                 order_result = bot.market_entry(bot.order_info)
             elif bot.order_info.is_close:
                 order_result = bot.market_close(bot.order_info)
-                log_message("장 탈출")
             elif bot.order_info.is_buy:
                 order_result = bot.market_buy(bot.order_info)
             elif bot.order_info.is_sell:

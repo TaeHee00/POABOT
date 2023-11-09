@@ -236,6 +236,7 @@ class Binance:
             self.set_leverage(order_info.leverage, symbol)
 
         try:
+            log_message("ccxt 주문 요청 전시각\n" + now.strftime('%Y-%m-%d %H:%M:%S') + ":" + now.microsecond)
             result = retry(
                 self.client.create_order,
                 symbol,
@@ -249,6 +250,7 @@ class Binance:
                 delay=0.1,
                 instance=self,
             )
+            log_message("ccxt 주문 마무리 시각\n" + now.strftime('%Y-%m-%d %H:%M:%S') + ":" + now.microsecond)
             return result
         except Exception as e:
             raise error.OrderError(e, self.order_info)
